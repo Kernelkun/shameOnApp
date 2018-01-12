@@ -1,0 +1,13 @@
+<div class="fondo filter-1977 {{ cmpHeigth }} {{ isList }}" [ngStyle]="getMyStyles()">
+    <div class="filter-gradient">
+        <div *ngIf="showTitle" class="app-background-title tarjeta">
+            <h2>{{ showType }}</h2>
+            <h1>{{ firstWord }}</h1>
+            <h1>{{ restOfTitle }}</h1>
+        </div>
+        
+        <div *ngIf="showRoot" class="app-background-title center">
+            <ng-content></ng-content>
+        </div>
+    </div>
+</div>

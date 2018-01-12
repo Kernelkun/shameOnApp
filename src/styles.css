@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+  height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    /* color: white; */
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-color: rgb(252, 252, 252);
+}
+
+.s  { height: 35%;  }
+.m  { height: 60%;  }
+.l  { height: 80%;  }
+.xl { height: 100%; }
+
+.app-background-title {
+    position: sticky;
+    top: 70%;
+    padding: 0% 0% 5% 5%;
+}
+
+.app-background-title.center {
+    text-align: center;
+    padding: 0% 0% 5% 0%;
+}
+
+.app-background-title h1 {
+    font-size: 2em; 
+    margin: 0;
+}
+
+.app-background-title.center h1 {
+    font-size: 3em;
+    padding-bottom: 10%;
+}
+
+.app-background-title h2 {
+    font-size: 1.5em; 
+    margin: 0;
+}
+
+app-background:first-child > div:first-child {
+    box-shadow: inset 0px 0px 5px -2px black;
+}
+
+app-background {
+    color: white;
+}

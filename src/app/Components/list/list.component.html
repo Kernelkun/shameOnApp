@@ -1,0 +1,6 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <app-background *ngFor="let item of list" cmpHeigth="s" mode="film" 
+    [titleName]="item.name" [backgroundUrl]="item.background" [isList]="list" (click)="goTo(item)"></app-background>
+</div>
+<app-search [searchValue]="searchValue"></app-search>

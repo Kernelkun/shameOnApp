@@ -1,0 +1,25 @@
+.navbar {
+    /* position:fixed; */
+    left:0px;
+    top:0px;
+    height:8%;
+    width:100%;
+    /* z-index: 99999; */
+    color: white;
+    background-color: rgba(3, 168, 244, 1);
+}
+
+.navbar > a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.navbar > a:visited {
+    color: white;
+}
+
+.navbar > a > i {
+    font-size: 2em;
+    padding: 3% 5%;
+}

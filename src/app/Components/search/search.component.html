@@ -1,0 +1,4 @@
+<div [className]="'base ' + activeClass">
+  <input type="search" #input (keyup.enter)="search(input.value)" [value]="searchValue">
+  <i class="fa fa-search" aria-hidden="true" (click)="search(input.value)"></i>
+</div>

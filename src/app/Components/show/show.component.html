@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <app-background cmpHeigth="l" mode="film" [titleName]="titleName" [backgroundUrl]="backgroundUrl"></app-background>
+  <div class="shameList">
+    <!-- <p *ngFor="let p of shameList">{{p.name}}</p> -->
+    <div *ngFor="let p of shameList" class="shameList-item">
+      <img class="center-cropped" src="{{p.img}}">
+      <div>
+        <p>{{p.name}}</p>
+        <!-- <p *ngFor="let u of p.urls"><a href="{{u}}"><i class="fa fa-globe" aria-hidden="true"></i> {{u | cleanUrl}}</a></p> -->
+      </div>
+      <ul>
+        <li *ngFor="let u of p.urls">
+          <a href="{{u}}">
+            <i class="fa fa-globe" aria-hidden="true"></i> {{u | cleanUrl}}</a>
+          </li>
+      </ul>
+    </div>
+    <div *ngIf="isClean && shameList.length === 0" class="is-clean">
+      <p>This movie is clean!</p>
+    </div>
+  </div>
+</div>

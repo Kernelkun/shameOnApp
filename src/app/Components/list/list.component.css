@@ -1,0 +1,5 @@
+.container {
+    overflow-y: scroll;
+    padding-bottom: 17%;
+    height: 100%;
+}
